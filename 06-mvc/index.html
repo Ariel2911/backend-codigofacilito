@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>M V C</h1>
+
+  <p>Dentro de https://sequelize-mock.readthedocs.io/en/stable/api/data-types/ se encuentran todos los tupos aceptados para los campos que se pueden asignar a un modelo de sequelize utilizando el cli</p>
+  <p>Este comando generara 2 archivos nuevos: el modelo y la migración</p>
+
+  <p>Para general el modelo de la migración utilizamos el comando: sequelize model:generate --name Task --attributes description:text</p>
+
+  <p>Comando para correr migraciones: sequelize db:migrate</p>
+
+  <p>Comando para revertir cambios: sequelize db:migrate:undo</p>
+
+  <h2>seaders</h2>
+  <h3>Comandos</h3>
+  <p>Para crear: sequelize seed:generate --name generate_tasks</p>
+  <p>Para inyectar en la db: sequelize db:seed:all</p>
+  <p>para deshacer cambios: sequelize db:seed:undo</p>
+  <p>para deshacer todos cambios: sequelize db:seed:undo:all</p>
+
+  <h2>arquitextura rest</h2>
+  <h3>Exsiten 6 limitantes que un sistema REST debe respetar</h3>
+
+  <ul>
+    <li>La arquitectura cliente servidor. se deben mantener por separado</li>
+    <li>Que sea Statelesss. Sin estado. La comunicaciones no deben tener un contexto. Las respuestas a las petiniones no dependeran de peticiones anteriores</li>
+    <li>Cacheability. Da la posibilidad de almacenar alguna de las respuestas en cache</li>
+    <li>Que el sistema puede estar basado en capas</li>
+    <li>Que posee una interfaz uniforme. La comunicacion debe seguir un standard</li>
+    <li>Pueda enviar código On Demand(única limitante opcional)</li>
+  </ul>
+  
+
+</body>
+</html>
